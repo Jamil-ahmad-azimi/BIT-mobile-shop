@@ -1,0 +1,28 @@
+<div class="container my-5">
+  <h2 class="mb-4 text-light">Edit Client</h2>
+  <form action="/edit-client" method="POST">
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label for="clientId" class="form-label text-light">Client ID</label>
+        <input type="text" class="form-control bg-dark text-white" id="clientId" name="clientId" readonly>
+      </div>
+      <div class="col-md-4">
+        <label for="clientName" class="form-label text-light">Name</label>
+        <input type="text" class="form-control bg-dark text-white" id="clientName" name="clientName" required>
+      </div>
+      <div class="col-md-3">
+        <label for="phoneNumber" class="form-label text-light">Phone Number</label>
+        <input type="tel" class="form-control bg-dark text-white" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      <div class="col-md-3">
+        <label for="email" class="form-label text-light">Email</label>
+        <input type="email" class="form-control bg-dark text-white" id="email" name="email">
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label text-light">Address</label>
+      <input type="text" class="form-control bg-dark text-white" id="address" name="address">
+    </div>
+    <button type="submit" class="btn btn-primary">Update Client</button>
+  </form>
+</div>

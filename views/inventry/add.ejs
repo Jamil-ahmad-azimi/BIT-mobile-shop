@@ -1,0 +1,36 @@
+<div class="container my-4">
+  <h2 class="mb-4">Add New Device</h2>
+  <form action="/add" method="POST">
+    <div class="table-responsive">
+      <table class="table table-bordered text-center align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th>Device ID</th>
+            <th>Name</th>
+            <th>Serial Number</th>
+            <th>Price ($)</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input type="text" class="form-control bg-secondary text-white" name="id" required>
+            </td>
+            <td>
+              <input type="text" class="form-control bg-secondary text-white" name="name" required>
+            </td>
+            <td>
+              <input type="text" class="form-control bg-secondary text-white" name="serialNumber" required>
+            </td>
+            <td>
+              <input type="number" class="form-control bg-secondary text-white" name="price" required>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+      <input type="submit" value="Add Device" class="btn btn-primary mt-3 offset-5">
+    </div>
+  </form>
+</div>

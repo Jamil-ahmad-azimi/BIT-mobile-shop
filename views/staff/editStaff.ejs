@@ -1,0 +1,44 @@
+<div class="container my-5">
+  <h2 class="mb-4 text-light">Edit Staff Member</h2>
+  <form action="/edit-staff" method="POST">
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label for="staffId" class="form-label text-light">Staff ID</label>
+        <input type="text" class="form-control bg-dark text-white" id="staffId" name="staffId" readonly>
+      </div>
+      <div class="col-md-4">
+        <label for="name" class="form-label text-light">Name</label>
+        <input type="text" class="form-control bg-dark text-white" id="name" name="name" required>
+      </div>
+      <div class="col-md-3">
+        <label for="jobTitle" class="form-label text-light">Job Title</label>
+        <input type="text" class="form-control bg-dark text-white" id="jobTitle" name="jobTitle" required>
+      </div>
+      <div class="col-md-3">
+        <label for="email" class="form-label text-light">Email</label>
+        <input type="email" class="form-control bg-dark text-white" id="email" name="email">
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="salary" class="form-label text-light">Salary ($)</label>
+        <input type="number" class="form-control bg-dark text-white" id="salary" name="salary" required>
+      </div>
+      <div class="col-md-3">
+        <label for="phone" class="form-label text-light">Phone Number</label>
+        <input type="tel" class="form-control bg-dark text-white" id="phone" name="phone" required>
+      </div>
+      <div class="col-md-3">
+        <label for="hireDate" class="form-label text-light">Hire Date</label>
+        <input type="date" class="form-control bg-dark text-white" id="hireDate" name="hireDate" required>
+      </div>
+      <div class="col-md-3">
+        <label for="address" class="form-label text-light">Address</label>
+        <input type="text" class="form-control bg-dark text-white" id="address" name="address">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Staff</button>
+  </form>
+</div>

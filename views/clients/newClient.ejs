@@ -1,0 +1,50 @@
+<div class="container my-5">
+  <h2 class="mb-4 text-light">Add New Client</h2>
+  <form action="newClient" method="POST">
+    <div class="row mb-3">
+      <div class="col-md-3">
+        <label for="clientId" class="form-label text-light">Client ID</label>
+        <input type="text" class="form-control bg-dark text-white" id="clientId" name="clientId" required>
+      </div>
+      <div class="col-md-3">
+        <label for="clientName" class="form-label text-light">Name</label>
+        <input type="text" class="form-control bg-dark text-white" id="clientName" name="clientName" required>
+      </div>
+      <div class="col-md-3">
+        <label for="device" class="form-label text-light">Device</label>
+        <input type="text" class="form-control bg-dark text-white" id="device" name="device" required>
+      </div>
+      <div class="col-md-3">
+        <label for="phoneNumber" class="form-label text-light">Phone Number</label>
+        <input type="tel" class="form-control bg-dark text-white" id="phoneNumber" name="phoneNumber" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="paymentMethod" class="form-label text-light">Payment Method</label>
+        <select class="form-select bg-dark text-white" id="paymentMethod" name="paymentMethod" required>
+          <option value="">Select</option>
+          <option value="Cash">Cash</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+          <option value="Mobile Payment">Mobile Payment</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label text-light">Payment Status</label>
+        <div class="form-check text-light">
+          <input class="form-check-input" type="radio" name="paymentStatus" id="paid" value="Paid" required>
+          <label class="form-check-label" for="paid">Paid</label>
+        </div>
+        <div class="form-check text-light">
+          <input class="form-check-input" type="radio" name="paymentStatus" id="notPaid" value="Not Paid">
+          <label class="form-check-label" for="notPaid">Not Paid</label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="note" class="form-label text-light">Note (Optional)</label>
+        <input type="text" class="form-control bg-dark text-white" id="note" name="note">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">Add Client</button>
+  </form>
+</div>

@@ -1,0 +1,67 @@
+<div class="container my-5">
+  <h2 class="mb-4 text-light">All Staff</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover text-center align-middle table-white text-dark">
+      <thead class="table-info text-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Job Title</th>
+          <th>Address</th>
+          <th>Email</th>
+          <th>Salary</th>
+          <th>Phone Number</th>
+          <th>Hire Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mohammad Yousuf</td>
+          <td>Sales Manager</td>
+          <td>Kabul, Afghanistan</td>
+          <td>yousuf@example.com</td>
+          <td>800</td>
+          <td>0700123456</td>
+          <td>2023-02-01</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ahmad Khan</td>
+          <td>Marketing Specialist</td>
+          <td>Mazar-i-Sharif, Afghanistan</td>
+          <td>ahmad@example.com</td>
+          <td>700</td>
+          <td>0700987654</td>
+          <td>2021-11-20</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sara Ahmad</td>
+          <td>HR Manager</td>
+          <td>Kandahar, Afghanistan</td>
+          <td>sara@example.com</td>
+          <td>900</td>
+          <td>0791122334</td>
+          <td>2020-05-10</td>
+        </tr>
+        <% for (staff of staffList) { %>
+        <tr>
+            <td><%= staff.id %></td>
+            <td><%= staff.name %></td>
+            <td><%= staff.jobTitle %></td>
+            <td><%= staff.address %></td>
+            <td><%= staff.email %></td>
+            <td><%= staff.salary %></td>
+            <td><%= staff.phone %></td>
+            <td><%= staff.hireDate %></td>
+        </tr>
+        <% } %>
+        
+        
+        
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>

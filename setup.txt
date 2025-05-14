@@ -1,0 +1,21 @@
+to make layout 
+
+1: Make includes  directory 
+2: add partials files like : header , sidebar , footer  to the includes folder 
+3: add boilerplate  to layout folder 
+4:  install : npm i --save ejs-mate 
+5:  install : npm i express-ejs-layouts
+6:  in app.js require ejsMate , const ejsmate = require('ejs-mate');
+7:  in app.js requre expressLayouts , const expressLayouts = require('express-ejs-layouts');
+8:  in app.js add these 
+
+app.use(expressLayouts);
+app.set('layout', 'layout/boilerplate');
+app.engine('ejs', ejsmate);
+
+9 : now use <%- include('../includes/sidebar.ejs') %> to include partials in boilerplate
+10: and use  <%- body %>  in between so you can have everypage code in this body 
+
+
+
+npm i methodoverride

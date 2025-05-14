@@ -1,0 +1,79 @@
+
+<div class="container mt-5">
+  <h2 class="mb-4">Wholesalers List</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover table-striped align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Company Name</th>
+          <th>Contact Person</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Products Supplied</th>
+          <th>Outstanding Balance</th>
+          <th>Status</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WH001</td>
+          <td>Global Supplies Co.</td>
+          <td>Mr. Samir Agha</td>
+          <td>+93 700 123 456</td>
+          <td>samir@globalsupplies.af</td>
+          <td>Kabul, Industrial Zone</td>
+          <td>Electronics, Cables, Routers</td>
+          <td>$1,200.00</td>
+          <td>Active</td>
+          <td>Reliable and consistent supplier</td>
+        </tr>
+        <tr>
+          <td>WH002</td>
+          <td>FastTrade Ltd.</td>
+          <td>Mrs. Fatima Nazari</td>
+          <td>+93 799 456 789</td>
+          <td>fatima@fasttrade.af</td>
+          <td>Herat, Main Market</td>
+          <td>Stationery, Printers</td>
+          <td>$500.00</td>
+          <td>Active</td>
+          <td>Offers good discounts on bulk</td>
+        </tr>
+        <tr>
+          <td>WH003</td>
+          <td>BulkZone Traders</td>
+          <td>Eng. Waheed Khan</td>
+          <td>+93 781 222 111</td>
+          <td>waheed@bulkzone.com</td>
+          <td>Kandahar, Commerce Park</td>
+          <td>Hardware, Tools</td>
+          <td>$0.00</td>
+          <td>Active</td>
+          <td>Stopped operations in 2024</td>
+        </tr>
+          <% if (wholesalers && wholesalers.length === 0) { %>
+  <tr><td colspan="10" class="text-center">End of the List</td></tr>
+<% } else { %>
+  <% wholesalers.forEach(wholesaler => { %>
+    <tr>
+      <td><%= wholesaler.wholesalerId %></td>
+      <td><%= wholesaler.companyName %></td>
+      <td><%= wholesaler.contactPerson %></td>
+      <td><%= wholesaler.phoneNumber %></td>
+      <td><%= wholesaler.email %></td>
+      <td><%= wholesaler.address %></td>
+      <td><%= wholesaler.productsSupplied %></td>
+      <td><%= wholesaler.balance %></td>
+      <td><%= wholesaler.status %></td>
+      <td><%= wholesaler.notes %></td>
+    </tr>
+  <% }); %>
+<% } %>
+
+      </tbody>
+    </table>
+  </div>
+</div>
